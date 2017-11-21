@@ -1,0 +1,1 @@
+A game.  You can control the ship and have to destroy the asteroids to continue your journey through space.
