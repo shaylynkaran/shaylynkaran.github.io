@@ -1,0 +1,1 @@
+Application to track budget, expenses, income, etc.
