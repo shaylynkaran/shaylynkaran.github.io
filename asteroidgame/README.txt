@@ -1,1 +1,1 @@
-A game.  You can control the ship and have to destroy the asteroids to continue your journey through space.
+A game.  You can control the ship and have to destroy the asteroids to continue your journey through space. Controls: SPACE to start/pause, Z to shoot, ARROWS to move around.
