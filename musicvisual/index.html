@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Soundcloud Data Visualizer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="outerWrapper">
+  <div id="wrapper">
+    
+    <label>Enter a Soundcloud URL:</label>
+    <input type="text" id="trackUrl" value="https://soundcloud.com/sboomin/beat-prod-k">
+    <button id="playSoundcloud" onclick="playSoundcloud()">PLAY</button>
+    <button id="stopSoundcloud" onclick="stopSoundcloud()">STOP</button>
+<br><br>
+    <div class="labelSpacer">
+      <label>Artist:</label>
+      <div id="artist"></div>
+    </div>
+    <br>
+    <div class="labelSpacer">
+      <label>Song:</label>
+      <div id="song"></div>
+    </div>
+    <br>
+    <div class="labelSpacer">
+      <label>Description:</label>
+      <div id="description"></div>
+    </div>
+
+    </div>
+    <div class="about">
+      <div>
+        for more instrumentals click <a href="https://www.soundcloud.com/sboomin" target="_blank">here</a>.
+      </div>
+
+    </div>
+    </div>
+    <canvas id="myCanvas">
+    </canvas>
+  <script src='https://connect.soundcloud.com/sdk/sdk-3.1.2.js'></script>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script  src="js/index.js"></script>
+</body>
+</html>
