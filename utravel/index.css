@@ -1,0 +1,92 @@
+body {
+  font: 10px sans-serif;
+}
+
+
+h1 {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 700;
+  color: #b23231;
+  font-size: 2.75em;
+  margin-bottom: 0.6em;
+  margin-top: 1.7em;
+  text-align: center;
+}
+
+
+#input {
+  width: 600px;
+  text-align: center;
+  height: 25px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 20pt;
+  border-width: 1px;
+  padding: 15px;
+  font-weight: 300;
+}
+
+#box {
+  width: 800px;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 20pt;
+  border-width: 1px;
+  padding: 15px;
+  font-weight: 300;
+}
+
+#map-container {
+  margin: 20px auto;
+  width: 800px;
+}
+
+#intro {
+  margin: 20px auto;
+  width: 800px;
+}
+
+#map-canvas {
+  width: 100%;
+  max-width: 800px;
+  height: 300px;
+  background-color: #CCC;
+}
+
+#result {
+  margin: 0px auto;
+  width: 800px;
+}
+
+#text {
+  width: 50%;
+  min-width: 200px;
+  margin-left: 0px;
+  text-align: left;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 20pt;
+  border-width: 1px;
+  padding: 15px;
+  font-weight: 300;
+  float:left;
+  color: #FF4847;
+}
+
+#text p {
+  margin-bottom: 100px;
+  margin-top: 34px;
+
+}
+
+#chart {
+  width: 40%;
+  min-width: 200px;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 10pt;
+  border-width: 1px;
+  padding: 5px;
+  font-weight: 300;
+  overflow: hidden;
+}
+
+
