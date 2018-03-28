@@ -9,11 +9,12 @@ function search(ele) {
     }
 };
 
-var myArray = [660, 400, 1150, 1320, 800, 1200, 900];
+// static costs of travel
+var cityCost = [660, 400, 1150, 1320, 800, 1200, 900];
 var rand = 0;
 
 var randomize = function(city) {
- rand = myArray[Math.floor(Math.random() * myArray.length)];
+ rand = cityCost[Math.floor(Math.random() * cityCost.length)];
  citysearch(city);
  console.log(rand);
 
@@ -63,8 +64,6 @@ var citysearch = function(city) {
 };
 
 
-//---------------------------------- D3----------------------------------------//
-
 
 var palette = ["#4b0840", "#54b2a7","#a2cd5a","#ff7373","#1fa700"];
 var catlist = ["Souvenier","Food","Lodging","Recreation", "Transportation"];
@@ -84,7 +83,7 @@ var drawcity = function(cityobj, city) {
     else { return -1; }
   });
 
-  var categoryposition = {"Culture": 0, "Food": 1, "Housing": 2, "Nightlife": 3, "Sports": 4, "Transportation": 5};
+  var categoryposition = {"Souvenier": 0, "Food": 1, "Lodging": 2, "Recreation": 3, "Transportation": 4};
   var summedup = [0,0,0,0,0,0];
 
   for (var i = cityobj.result.length - 1; i >= 0; i--) {
