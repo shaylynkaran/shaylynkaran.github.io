@@ -3,14 +3,10 @@
 
 <html>
 <head>
-	<title>uTravel | Home</title>
-	<script src="https://maps.googleapis.com/maps/api/js"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=YAIzaSyB94Zc84l6no22yY__FebeZD4aKQIvI-m4&callback=initMap"
-  type="text/javascript"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
     <script>
 
     var citymap = {};
-    
     	citymap['Dubai'] = {
 		  center: new google.maps.LatLng(25.233402, 55.244013),
 		  population: 3857799
@@ -31,7 +27,6 @@
           center: new google.maps.LatLng(-18.223283, 178.172654),
           population: 3857799
          };
-
 		citymap['Amsterdam'] = {
           center: new google.maps.LatLng(52.375345, 4.894325),
           population: 3857799
@@ -62,6 +57,14 @@
 		};
 		citymap['Melbourne'] = {
 		  center: new google.maps.LatLng(-37, 145),
+		  population: 3857799
+		};
+		citymap['Djibouti'] = {
+		  center: new google.maps.LatLng(11, 43),
+		  population: 3857799
+		};
+		citymap['Belgrad'] = {
+		  center: new google.maps.LatLng(44, 20),
 		  population: 3857799
 		};
 
@@ -143,7 +146,7 @@ var cityCircle;
     </script>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="functions.js" ></script>
+<script src="draw.js" ></script>
 <link rel="stylesheet" type="text/css" href="index.css">
 
 </head>
