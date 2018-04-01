@@ -212,7 +212,6 @@ var UIController = (function() {
         dec = numSplit[1];
 
         return (type === 'exp' ? '-' : '+') + ' ' + int + '.' + dec;
-
     };
     
     
@@ -261,7 +260,6 @@ var UIController = (function() {
             
             var el = document.getElementById(selectorID);
             el.parentNode.removeChild(el);
-            
         },
         
         
@@ -293,7 +291,6 @@ var UIController = (function() {
             } else {
                 document.querySelector(DOMstrings.percentageLabel).textContent = '---';
             }
-            
         },
         
         
@@ -309,7 +306,6 @@ var UIController = (function() {
                     current.textContent = '---';
                 }
             });
-            
         },
         
         
@@ -339,7 +335,6 @@ var UIController = (function() {
             });
             
             document.querySelector(DOMstrings.inputBtn).classList.toggle('red');
-            
         },
         
         
