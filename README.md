@@ -1,4 +1,3 @@
 # shaylynkaran.github.io
-The main purpose of the GitHub pages is to showcase my Senior Research Project, the links are below:
-- https://shaylynkaran.github.io/budgetCalc/index.html
-- https://shaylynkaran.github.io/utravel/index.html
+Directory at the link below.
+- https://shaylynkaran.github.io/landing/index.html
