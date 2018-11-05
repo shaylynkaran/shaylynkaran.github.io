@@ -1,0 +1,37 @@
+body {
+	width: 90%;
+	margin: auto;
+	font-family: 'Inconsolata', monospace;
+	text-align: center;
+}
+
+#box {
+	width: 50%;
+	margin: auto;
+	border: 1px solid black;
+}
+
+a {
+  color: inherit;
+  font-size: 1.5em;
+  text-decoration: none;
+  margin: 1em;
+  display: inline-block;
+  position: relative;
+}
+
+a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  -webkit-transition: height 200ms;
+  transition: height 200ms;
+  /* Tweak color and sizing here */
+  background-color: cyan;
+  height: .45em;
+  bottom: 0;
+}
+
+a:hover::after { height: 1.15em; } 
