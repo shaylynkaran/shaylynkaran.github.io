@@ -1,19 +1,18 @@
-<?php
+ <?php
+       $name = $_POST['name'];
+       $email = $_POST['email'];
+       $message = $_POST['message'];
+       $from = 'From: My Contact Form';
+       $to = 'shaylynskaran@gmail.com';
+       $subject = 'Wassup?';
 
-// Gets values from form
-$name=$_POST['name'];
-$email=$_POST['email'];
-$message=$_POST['message'];
+       $body = "From: $name\n E-Mail: $email\n Message:\n $message";
 
-$to = "shaylynskaran@gmail.com";
-$headers = "From:" . $from . "\r\n";
-$headers .= "Content-type: text/plain; charset=UTF-8" . "\r\n"; 
-
-if(@mail($to,$subject,$message,$headers))
-{
-  print "<script>document.location.href='http://shaylynkaran.github.io/portfolio/success.html';</script>";
-  // Created by Future Tutorials
-}else{
-  echo "Error! Please try again.";
-}
-?>
+       if ($_POST['submit']) {
+           if (mail ($to, $subject, $body, $from)) {
+           echo '<p>Message Sent Successfully!</p>';
+           } else {
+           echo '<p>Ah! Try again, please?</p>';
+           }
+       }
+    ?>
