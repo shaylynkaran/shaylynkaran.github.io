@@ -14,6 +14,10 @@ header {
   border-bottom: 1px solid black;
 }
 
+main {
+  height: 96vh;
+}
+
 section img {
   width: 50%;
   display: block;
