@@ -13,6 +13,18 @@ body {
 header {
   border-bottom: 1px solid black;
 }
+
+section img {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  border: 0.15em solid #000;
+}
+
+svg {
+  width: 30%;
+}
+
 .header {
   width: 100%;
   display: block;
@@ -78,7 +90,7 @@ header {
   background: #333;
   content: '';
   display: block;
-  height: 100%;
+  height: 100x;
   position: absolute;
   transition: all .2s ease-out;
   width: 100%;
@@ -135,6 +147,24 @@ header {
   }
 }
 
+#landing {
+  color: #fff;
+  background-color: #66b9bfff;
+  padding: 1em;
+  overflow: auto;
+}
+
+#landing h2{
+  border: 0;
+}
+
+#landing img {
+  width: 15%;
+  float: right;
+  margin: 1em;
+  vertical-align: middle;
+}
+
 body h1 {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
@@ -149,92 +179,9 @@ body h3 {
   color: #e37222;
 }
 
-#landing img {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-
 .main {
   max-width: 20em;
   margin: 0 auto;
-}
-
-.cardimage img {
-  height: auto;
-  max-width: 100%;
-  vertical-align: middle;
-}
-
-.btn {
-  color: #ffffff;
-  padding: 0.8rem;
-  text-transform: uppercase;
-  border-radius: 0.25em;
-  font-weight: 400;
-  display: block;
-  width: 100%;
-  cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: transparent;
-}
-
-.btn:hover {
-  background-color: rgba(255, 255, 255, 0.12);
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.cards_item {
-  display: flex;
-  padding: 1rem;
-}
-
-@media (min-width: 40rem) {
-  .cards_item {
-    width: 40%;
-  }
-}
-
-@media (min-width: 56rem) {
-  .cards_item {
-    width: 26.66%;
-  }
-}
-
-.card {
-  background-color: white;
-  border-radius: 0.25rem;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-.card_content {
-  padding: 1rem;
-  background: linear-gradient(to bottom left, #66b9bf 40%, #eeaa7b 100%)
-}
-
-.card_title {
-  color: #ffffff;
-  font-size: 1.1rem;
-  font-weight: 700;
-  text-transform: capitalize;
-}
-
-.card_text {
-  color: #ffffff;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  margin-bottom: 1.25rem;    
-  font-weight: 400;
 }
 
 table {
@@ -254,25 +201,29 @@ article p {
   font-family: 'Inconsolata', monospace;
 }
 
+label {
+  display: block;
+}
+
+input {
+  display: block;
+  margin: 1em 0 0 0;
+}
+
 input:invalid {
-  border: 2px solid red;
+  background-color: #ffdddd;
 }
 
 input:valid {
-  border: 2px solid green;
+  background-color: #ddffdd;
 }
-
-#skills img {
-  width: 32%;
-  height: auto;
-}
-
 footer a:link, a:visited {
   color: #000;
   text-decoration: none;
 }
 
 footer {
-  text-align: center;
+  width: 100%;
+  margin-left: 15%;
   padding: 1em;
 }
