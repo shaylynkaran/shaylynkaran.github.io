@@ -213,13 +213,6 @@ input {
   margin: 1em 0 0 0;
 }
 
-input:invalid {
-  background-color: #ffdddd;
-}
-
-input:valid {
-  background-color: #ddffdd;
-}
 footer a:link, a:visited {
   color: #000;
   text-decoration: none;
@@ -227,6 +220,6 @@ footer a:link, a:visited {
 
 footer {
   width: 100%;
-  margin-left: 15%;
   padding: 1em;
+  text-align: center;
 }
