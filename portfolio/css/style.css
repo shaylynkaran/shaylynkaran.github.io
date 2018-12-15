@@ -1,225 +1,149 @@
-html {
-  max-width: 140em;
-  margin: auto;
-}
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Inconsolata');
+
 body {
-  width: 90%;
-  margin: 0 auto;
+  background: lightgray;
+}
+
+nav {
+  width: 100%;
   font-family: 'Inconsolata', monospace;
-  background-color: #f4f4f4;
-}
-
-/* Header */
-header {
-  border-bottom: 1px solid black;
-}
-
-main {
-  height: 96vh;
-}
-
-section img {
-  width: 50%;
-  display: block;
-  margin: 0 auto;
-}
-
-svg {
-  width: 30%;
-}
-
-.header {
-  width: 100%;
-  display: block;
-  margin: 0 auto;
-  background-color: #fff;
-}
-
-.header nav {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  background-color: #fff;
-}
-
-.header a {
-  color: #000;
-  display: inline-block;
-  padding: 1em 1em;
-  text-decoration: none;
-}
-
-.header a:hover,
-.header .menu-btn:hover {
-  color: #07889b;
-}
-
-.header .logo {
-  display: block;
-  float: left;
-  font-size: 1.5em;
-  text-decoration: none;
-}
-
-/* menu */
-.header nav {
-  clear: both;
-  max-height: 0;
-  transition: max-height .2s ease-out;
-}
-
-/* menu icon */
-.header .menu-icon {
-  cursor: pointer;
-  display: inline-block;
-  float: right;
-  padding: 1em 1em;
-  position: relative;
-  user-select: none;
-}
-
-.header .menu-icon .navicon {
-  background: #333;
-  display: block;
-  height: 0.2em;
-  position: relative;
-  transition: background .2s ease-out;
-  width: 1.2em;
-}
-
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
-  background: #333;
-  content: '';
-  display: block;
-  height: 100x;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
-}
-
-.header .menu-icon .navicon:before {
-  top: 0.5em;
-}
-
-.header .menu-icon .navicon:after {
-  top: -0.5em;
-}
-
-/* Menu Button */
-.header .menu-btn {
-  display: none;
-}
-
-.header .menu-btn:checked ~ nav {
-  max-height: 15em;
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent;
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
-  transform: rotate(-45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
-  transform: rotate(45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-  top: 0;
-}
-
-@media (min-width: 48em) {
-  .header {
-    float: left;
-  }
-  .header a {
-    padding: 1em 0.5em;
-  }
-  .header nav {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-  .header .menu-icon {
-    display: none;
-  }
-}
-
-#landing {
-  color: #fff;
-  background-color: #66b9bfff;
-  padding: 1em;
-  overflow: auto;
-}
-
-#landing h2{
-  border: 0;
-}
-
-#landing img {
-  width: 25%;
-  float: right;
-  margin: 1em;
-  vertical-align: middle;
-}
-
-body h1 {
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-}
-body h2 {
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-  border-bottom: .2em solid;
-}
-
-body h3 {
-  color: #e37222;
-}
-
-.main {
-  max-width: 20em;
-  margin: 0 auto;
-}
-
-table {
-  border-collapse: collapse;
-}
-
-td, th {
-  padding: 0.5em;
-  border: 1px solid black;
-}
-
-tr:nth-child(even) {
-    background-color: #eeaa7b;
-}
-
-article p {
-  font-family: 'Inconsolata', monospace;
-}
-
-label {
-  display: block;
-}
-
-input {
-  display: block;
-  margin: 1em 0 0 0;
-}
-
-footer a:link, a:visited {
-  color: #000;
-  text-decoration: none;
-}
-
-footer {
-  width: 100%;
-  padding: 1em;
   text-align: center;
+}
+
+nav a {
+  padding: 0.5em;
+  text-decoration: none;
+}
+
+#profilecard {
+  font-family: 'Cutive Mono', monospace;
+  position: relative;
+  margin: 0 auto;
+  max-width: 315px;
+  width: 100%;
+  color: #000000;
+  text-align: center;
+  line-height: 1.4em;
+  font-size: 14px;
+  box-shadow: none !important;
+}
+
+#profilecard * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#profilecard .profile-image {
+  display: inline-block;
+  width: 80%;
+  z-index: 1;
+  position: relative;
+  padding: 10px;
+  border: 2px solid #e87363;
+}
+
+#profilecard .profile-image img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+#profilecard figcaption {
+  width: 100%;
+  background-color: #F2F2F2;
+  color: #555;
+  padding: 125px 25px 25px;
+  margin-top: -100px;
+  display: inline-block;
+}
+
+#profilecard h3,
+#profilecard h4,
+#profilecard p {
+  margin: 0 0 5px;
+}
+
+#profilecard h3 {
+  font-weight: 600;
+  font-size: 1.3em;
+  font-family: 'Inconsolata', monospace;
+}
+
+#profilecard h4 {
+  color: #8c8c8c;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+#profilecard p {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+#profilecard .icons {
+  text-align: center;
+  width: 100%;
+}
+
+.icons a {
+  text-decoration: none;
+}
+
+.icons svg {
+  height: 2em;
+}
+
+.project {
+  max-width: 760px;
+  margin: 10rem auto;
+  padding: 0;
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.07);
+  transition: 0.25s;
+}
+
+.project:hover {
+  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.07);
+}
+
+.project-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.project-photo {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://source.unsplash.com/random");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.project-text {
+  text-align: center;
+  line-height: 1.5;
+  padding: 1.5rem;
+}
+
+.project-text h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  margin: 0;
+}
+
+.project-text a {
+  text-decoration: none;
+  color: dimgray;
+  border: 1px solid dimgray;
+  padding: 5px 7px;
+  border-radius: 4px;
+}
+
+.project-text a:hover {
+  background: dimgray;
+  color: #fff;
 }
