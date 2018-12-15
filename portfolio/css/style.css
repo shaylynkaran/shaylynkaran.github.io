@@ -6,6 +6,7 @@ body {
 
 nav {
   width: 100%;
+  padding: 1em;
   font-family: 'Inconsolata', monospace;
   text-align: center;
 }
@@ -116,11 +117,16 @@ nav a {
 .project-photo {
   width: 100%;
   height: 100%;
-  background-image: url("https://source.unsplash.com/random");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
+
+.project-photo img {
+  max-width: 20em;
+  margin: 3em 0 0 1.5em;
+}
+
 
 .project-text {
   text-align: center;
@@ -129,13 +135,19 @@ nav a {
 }
 
 .project-text h2 {
+  font-family: 'Inconsolata', monospace;
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 2.5px;
   margin: 0;
 }
 
+.project-text p {
+  font-family: 'Cutive Mono', monospace;
+}
+
 .project-text a {
+  font-family: 'Cutive Mono', monospace;
   text-decoration: none;
   color: dimgray;
   border: 1px solid dimgray;
